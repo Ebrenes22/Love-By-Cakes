@@ -1,6 +1,7 @@
 /*Hoja de estilos de la clase 2 Web y Patrones*/
 body {
   font-family: 'Roboto', sans-serif;
+  padding: 90px 20px 0;
 }
 /*id... #xxx*/
 #encabezado {
