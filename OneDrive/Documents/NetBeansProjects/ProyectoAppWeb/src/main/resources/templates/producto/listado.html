@@ -1,15 +1,47 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-<html>
+<html lang="es">
     <head>
-        <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de Productos</title>
+        <style>
+            /* Estilos opcionales para mejorar la apariencia */
+            body {
+                font-family: Arial, sans-serif;
+                max-width: 400px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+        </style>
     </head>
     <body>
-        <div>TODO write content</div>
+        <h2>Lista de Productos</h2>
+        <form>
+            <ul>
+                <li>
+                    <label>
+                        <input type="checkbox" name="producto1" value="Producto 1">
+                        Producto 1
+                    </label>
+                    <input type="number" name="cantidad1" min="1" max="10" value="1">
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="producto2" value="Producto 2">
+                        Producto 2
+                    </label>
+                    <input type="number" name="cantidad2" min="1" max="10" value="1">
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="producto3" value="Producto 3">
+                        Producto 3
+                    </label>
+                    <input type="number" name="cantidad3" min="1" max="10" value="1">
+                </li>
+                <!-- Puedes agregar más elementos de la lista aquí -->
+            </ul>
+            <button type="submit">Comprar</button>
+        </form>
     </body>
 </html>
