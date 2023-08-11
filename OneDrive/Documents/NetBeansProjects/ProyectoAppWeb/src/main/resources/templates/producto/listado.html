@@ -1,47 +1,27 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lista de Productos</title>
-        <style>
-            /* Estilos opcionales para mejorar la apariencia */
-            body {
-                font-family: Arial, sans-serif;
-                max-width: 400px;
-                margin: 0 auto;
-                padding: 20px;
-            }
-        </style>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6"
+      >
+   
+    <head th:replace="~{layout/plantilla :: head}">
+        <title>TechShop</title>
     </head>
     <body>
-        <h2>Lista de Productos</h2>
-        <form>
-            <ul>
-                <li>
-                    <label>
-                        <input type="checkbox" name="producto1" value="Producto 1">
-                        Producto 1
-                    </label>
-                    <input type="number" name="cantidad1" min="1" max="10" value="1">
-                </li>
-                <li>
-                    <label>
-                        <input type="checkbox" name="producto2" value="Producto 2">
-                        Producto 2
-                    </label>
-                    <input type="number" name="cantidad2" min="1" max="10" value="1">
-                </li>
-                <li>
-                    <label>
-                        <input type="checkbox" name="producto3" value="Producto 3">
-                        Producto 3
-                    </label>
-                    <input type="number" name="cantidad3" min="1" max="10" value="1">
-                </li>
-                <!-- Puedes agregar más elementos de la lista aquí -->
-            </ul>
-            <button type="submit">Comprar</button>
-        </form>
+        <header th:replace="~{layout/plantilla :: header}"/>
+
+        <section th:replace="~{categoria/fragmentos :: botonesAgregar}"/>
+        <section th:replace="~{categoria/fragmentos :: agregarCategoria}"/> 
+        <section th:replace="~{categoria/fragmentos :: listadoCategorias}"/>
+
+        <footer th:replace="~{layout/plantilla :: footer}"/>      
+      
     </body>
 </html>
+
+
+
+
+
+
+
