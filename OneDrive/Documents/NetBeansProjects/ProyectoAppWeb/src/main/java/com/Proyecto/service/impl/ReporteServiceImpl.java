@@ -1,6 +1,6 @@
 package com.Proyecto.service.impl;
 
-import com.tienda.service.ReporteService;
+import com.Proyecto.service.ReporteService;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -33,7 +33,6 @@ public class ReporteServiceImpl implements ReporteService {
     @Autowired
     DataSource datasource;
     
-    @Override
     public ResponseEntity<Resource> generaReporte(
             String reporte,
             Map<String, Object> parametros,
@@ -130,7 +129,6 @@ public class ReporteServiceImpl implements ReporteService {
             e.printStackTrace();
             return null;
         }
-
     }
 
 }

@@ -1,5 +1,4 @@
 package com.Proyecto.domain;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -11,26 +10,23 @@ import java.io.Serializable;
 import java.util.List;
 import javax.validation.constraints.NotEmpty;
 import lombok.Data;
-
 @Entity
 
 @Data
 
-@Table(name = "usuario")
-
-public class Usuario implements Serializable {
-
+@Table(name="usuario")
+public class Usuario implements Serializable{
     private static final long serialVersionUID = 1L;
 
     @Id
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    private Long idUsuario;
+    private Long idUsuario;    
 
     @NotEmpty
 
-    private String username;
+    private String username;    
 
     @NotEmpty
 
@@ -42,15 +38,17 @@ public class Usuario implements Serializable {
 
     private String correo;
 
-    private String telefono;
+    private String telefono;    
 
     private String rutaImagen;
 
     private boolean activo;
 
+    
+
     @OneToMany
 
-    @JoinColumn(name = "id_usuario")
+    @JoinColumn(name="id_usuario")
 
     private List<Rol> roles;
 }

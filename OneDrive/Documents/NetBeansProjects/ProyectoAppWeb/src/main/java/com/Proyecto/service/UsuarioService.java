@@ -1,10 +1,7 @@
 package com.Proyecto.service;
-
-import com.tienda.domain.Usuario;
+import com.Proyecto.domain.Usuario;
 import java.util.List;
-
 public interface UsuarioService {
-    
     // Se obtiene un listado de usuarios en un List
     public List<Usuario> getUsuarios();
     
@@ -29,5 +26,4 @@ public interface UsuarioService {
     
     // Se elimina el usuario que tiene el id pasado por parámetro
     public void delete(Usuario usuario);
-    
 }

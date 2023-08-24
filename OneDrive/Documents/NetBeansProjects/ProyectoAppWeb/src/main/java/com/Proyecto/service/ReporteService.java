@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
 package com.Proyecto.service;
 
 
@@ -12,13 +8,13 @@ import org.springframework.http.ResponseEntity;
 
 /**
  *
- * @author Eliecer_Brenes
+ * @author tony-
  */
 public interface ReporteService {
-
     public ResponseEntity<Resource> generaReporte(
             String reporte,
             Map<String, Object> parametros,
             String tipo
     ) throws IOException;
+            
 }
