@@ -10,7 +10,56 @@
             <div class="container">
                 <div class="row row-cols-2" >
                     <h2 class="inline">[[#{index.nuestrosProductos}]]</h2>
-                    <div id="resultsBlock"></div></div>
+                    <div id="resultsBlock"></div>
+                </div>
+                <div id="imageCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <img th:src="@{https://www.azucardominomex.com/sites/azucardominomex_com/files/2022-10/DOMINO_PASTEL-DE-CHOCOLATE-BRUCE2.jpg}" class="d-block w-100" style="object-fit: cover; height: 400px;" alt="Image 1">
+                                    <p class="mt-2" style="background-color: #f5f5f5"> Celebra con sabor. Presentamos nuestro exquisito Pastel de Chocolate Love by Cakes.
+                                        Un deleite irresistible para tus sentidos.<br> ¡Ordénalo ahora y déjate llevar por el placer del chocolate!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <img th:src="@{https://images.pexels.com/photos/3065592/pexels-photo-3065592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1}" class="d-block w-100" style="object-fit: cover; height: 400px;" alt="Image 2">
+                                    <p class="mt-2" style="background-color: #f5f5f5"> Descubre la perfección en cada bocado. Nuestra Tarta de Manzana Love by Cakes es un equilibrio exquisito
+                                        entre lo dulce y lo ligeramente ácido.<br> ¡Déjate cautivar por su sabor fresco y auténtico!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <img th:src="@{https://images.pexels.com/photos/5594501/pexels-photo-5594501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1}" class="d-block w-100" style="object-fit: cover; height: 400px;" alt="Image 3">
+                                    <p class="mt-2" style="background-color: #f5f5f5"> La tentación se llama Pastel de Zanahoria Love by Cakes. Disfruta de la esponjosidad y el sabor inigualable
+                                        de este clásico reinventado.<br> ¡Regálate un momento de placer con cada delicioso trozo!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <img th:src="@{https://images.pexels.com/photos/5419108/pexels-photo-5419108.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1}" class="d-block w-100" style="object-fit: cover; height: 400px;" alt="Image 4">
+                                    <p class="mt-2" style="background-color: #f5f5f5"> Refresca tus sentidos con la Tarta de Limón Love by Cakes. La combinación perfecta entre lo cítrico y lo dulce,
+                                        ideal para cualquier ocasión.<br> ¡Experimenta un sabor que te hará sonreír!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <img th:src="@{https://images.pexels.com/photos/3776939/pexels-photo-3776939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1}" class="d-block w-100" style="object-fit: cover; height: 400px;" alt="Image 5">
+                                    <p class="mt-2" style="background-color: #f5f5f5"> Pequeños bocados de elegancia y sabor.<br> Nuestros Macarons de Frambuesa Love by Cakes son una delicia irresistible
+                                            que te transportará a un mundo de sabores sutiles y sofisticados.</p>
+                            </div>
+                        </div>
+                        <!-- Agrega más elementos carousel-item para más imágenes -->
+                    </div>
+                    <a class="carousel-control-prev" href="#imageCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#imageCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
                 <div class="row row-cols-3" 
                      th:if="${productos != null and !productos.empty}">
                     <div class="card" th:each="producto : ${productos}">
